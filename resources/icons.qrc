@@ -1,0 +1,11 @@
+<!DOCTYPE RCC>
+<RCC version="1.0">
+  <qresource>
+    <file>icons/application.png</file>
+    <file>icons/error.png</file>
+    <file>icons/info.png</file>
+    <file>icons/receive.png</file>
+    <file>icons/record.png</file>
+    <file>icons/send.png</file>
+  </qresource>
+</RCC>
