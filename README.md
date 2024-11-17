@@ -22,3 +22,13 @@ pip install USBtingoGUI
 python -m USBtingoGUI
 ```
 
+## Troubleshooting
+
+### Linux: "LIBUSB_ERROR_ACCESS" as non-root
+
+Add udev rule to give permissions to all users.
+```
+sudo bash -c $'echo \'SUBSYSTEM=="usb", ATTRS{product}=="USBtingo", MODE="0666"\' > /etc/udev/rules.d/50-USBtingo.rules'
+
+sudo udevadm control --reload-rules
+```
